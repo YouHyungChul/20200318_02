@@ -35,8 +35,8 @@ public class MainActivity extends BaseActivity {
 //        ==> User 클래스를 한번에 전달하면 편하다!
 //        데이터 전달을 간으하게 하려면, 해당 클래스 Serializable 역활 수행 명시.
         User u = new User("조경진", 1988);
-
-        Intent intent = new Intent(MainActivity.this, UserInfoActivity.class);
+//                                              MainActivity.this를 대신함
+        Intent intent = new Intent(mContext, UserInfoActivity.class);
         intent.putExtra("userInfo","이름");
 
 
